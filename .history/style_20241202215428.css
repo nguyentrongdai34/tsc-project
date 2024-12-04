@@ -1,0 +1,30 @@
+.header-main {
+  display: flex;
+  height: 90px;
+}
+
+.header {
+  display: flex;
+  background-color: #ccc;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex-flow: row nowrap;
+  padding-right: 15px;
+}
+
+.header-logo img {
+  padding-left: 15px;
+  width: 167px;
+  height: 62px;
+}
+
+.header-slogan {
+  padding-right: 15px;
+}
+
+.header-slogan strong {
+  font-weight: bolder;
+  font-size: 24px;
+}

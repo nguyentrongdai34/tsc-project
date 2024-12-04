@@ -1,0 +1,160 @@
+.header-main {
+  display: flex;
+  height: 90px;
+}
+
+.header {
+  display: flex;
+  /* background-color: #ccc; */
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex-flow: row nowrap;
+  padding-right: 15px;
+}
+
+.header-logo img {
+  object-fit: cover;
+  margin-left: 220px;
+  width: 167px;
+  height: 62px;
+}
+
+.header-slogan {
+  margin-right: 220px;
+  font-size: 24px;
+}
+
+.header-slogan strong {
+  text-direction: none;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+/* hero */
+
+.hero {
+  cursor: pointer;
+  padding: 0 0 30px 0;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 460px;
+  position: relative;
+  object-fit: cover;
+}
+
+.hero-circle {
+  top: 42%;
+  position: absolute;
+}
+
+.hero-circle i {
+  color: #ccc;
+  font-size: 36px;
+}
+
+.hero-circle i:hover {
+  transition: color 0.3s ease, background-color 0.3s ease;
+  color: #dd3333;
+}
+
+.hero-circle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+}
+
+.circle-left {
+  margin-left: 30px;
+}
+
+.circle-right {
+  margin-right: 30px;
+  width: 36px;
+  height: 36px;
+}
+
+/* section */
+.section {
+  width: 1050px;
+  margin-left: 15%;
+}
+
+.section-title {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.section-title b {
+  display: block;
+  -ms-flex: 1;
+  flex: 1;
+  height: 2px;
+  opacity: 0.1;
+  background-color: currentColor;
+}
+
+.section-title-main {
+  margin: 0 15px;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.row {
+}
+
+/* Section Grid */
+.section-gird {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cột */
+  gap: 0px; /* Loại bỏ khoảng cách giữa các item */
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%; /* Đảm bảo item chiếm 100% chiều rộng */
+  overflow: hidden;
+}
+
+/* Box Text */
+.box-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(140, 31, 31, 0.9);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  z-index: 1;
+  opacity: 0; /* Ẩn mặc định */
+  transition: opacity 0.3s ease;
+}
+
+/* Hiển thị Box Text khi hover vào */
+.grid-item:hover .box-text {
+  opacity: 1;
+}
+
+/* Ảnh trong Grid */
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Đảm bảo ảnh không bị méo */
+}
+
+.box-text {
+  background-color: rgb(140, 31, 31);
+}

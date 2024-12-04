@@ -1,0 +1,18 @@
+.header-main {
+  display: block;
+}
+
+.header {
+  display: flex;
+  height: 90px;
+  background-color: #ccc;
+  justify-content: space-between;
+  width: 100%;
+  flex-flow: row nowrap;
+  align-item: center;
+}
+
+.header-logo img {
+  width: 167px;
+  height: 63px;
+}

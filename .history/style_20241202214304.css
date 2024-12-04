@@ -1,0 +1,20 @@
+.header-main {
+  display: inline-block;
+}
+
+.header {
+  display: flex;
+  width: 1519px;
+  height: 90px;
+  background-color: #ccc;
+  justify-content: space-between;
+  width: 100%;
+  flex-flow: row nowrap;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header-logo img {
+  width: 167px;
+  height: 63px;
+}

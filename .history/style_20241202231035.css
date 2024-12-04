@@ -1,0 +1,60 @@
+.header-main {
+  display: flex;
+  height: 90px;
+}
+
+.header {
+  display: flex;
+  /* background-color: #ccc; */
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex-flow: row nowrap;
+  padding-right: 15px;
+}
+
+.header-logo img {
+  object-fit: cover;
+  padding-left: 15px;
+  width: 167px;
+  height: 62px;
+}
+
+.header-slogan {
+  padding-right: 15px;
+  font-size: 24px;
+}
+
+.header-slogan strong {
+  text-direction: none;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+/* hero */
+.hero-img img {
+  position: relative;
+  object-fit: cover;
+}
+
+.hero-circle {
+  top: 35%;
+  position: absolute;
+}
+
+.hero-circle img {
+  width: 36px;
+  height: 36px;
+}
+
+.hero-circle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+}
+
+.circle-left {
+  padding-left: 15px;
+}
